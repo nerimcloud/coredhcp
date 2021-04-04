@@ -28,6 +28,7 @@ import (
 	pl_searchdomains "github.com/coredhcp/coredhcp/plugins/searchdomains"
 	pl_serverid "github.com/coredhcp/coredhcp/plugins/serverid"
 	pl_sleep "github.com/coredhcp/coredhcp/plugins/sleep"
+	pl_option82 "github.com/nerimcloud/coredhcp/plugins/option82"
 
 	"github.com/sirupsen/logrus"
 	flag "github.com/spf13/pflag"
@@ -70,6 +71,7 @@ var desiredPlugins = []*plugins.Plugin{
 	&pl_searchdomains.Plugin,
 	&pl_serverid.Plugin,
 	&pl_sleep.Plugin,
+	&pl_option82.Plugin,
 }
 
 func main() {
